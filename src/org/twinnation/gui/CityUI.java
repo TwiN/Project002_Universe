@@ -6,13 +6,15 @@ import org.twinnation.util.GlobalConstants;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * This is a temporary 2D representation, will be modified later
+ */
 public class CityUI extends JFrame implements GlobalConstants {
 	private JFrame frame = new JFrame();
 	private JPanel panel;
 
 	public CityUI() {
 		frame.setTitle("City");
-		frame.setMaximumSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
 		frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
 		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		panel = new GPanel();
