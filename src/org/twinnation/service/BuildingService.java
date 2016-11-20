@@ -1,6 +1,6 @@
 package org.twinnation.service;
 import org.twinnation.landscape.Building;
-import org.twinnation.util.GlobalConstants;
+import org.twinnation.constant.GlobalConstants;
 import org.twinnation.util.TwinUtilities;
 
 import java.awt.*;

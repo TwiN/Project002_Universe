@@ -1,7 +1,7 @@
 package org.twinnation.gui;
 
 import org.twinnation.service.BuildingService;
-import org.twinnation.util.GlobalConstants;
+import org.twinnation.constant.GlobalConstants;
 
 import javax.swing.*;
 import java.awt.*;
