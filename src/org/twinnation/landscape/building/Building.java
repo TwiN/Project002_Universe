@@ -1,11 +1,16 @@
-package org.twinnation.landscape;
+package org.twinnation.landscape.building;
 
-public class Building {
+public abstract class Building {
+	/* Graphical aspect of the building */
 	private int width;
 	private int height;
 	private int length;
 	private int posX;
 	private int posY;
+
+	/** Empty constructor */
+	public Building() {}
+
 
 	public Building(int posX, int posY, int width, int height, int length) {
 		System.out.println("Building created with -> POS("+posX+","+posY+") SIZE("+width+","+height+","+length+")");
@@ -15,6 +20,7 @@ public class Building {
 		this.height = height;
 		this.length = length;
 	}
+
 
 	public int getWidth() {
 		return width;

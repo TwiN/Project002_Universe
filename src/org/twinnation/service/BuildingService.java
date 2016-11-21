@@ -1,5 +1,5 @@
 package org.twinnation.service;
-import org.twinnation.landscape.Building;
+import org.twinnation.landscape.building.Building;
 import org.twinnation.constant.GlobalConstants;
 import org.twinnation.util.TwinUtilities;
 
