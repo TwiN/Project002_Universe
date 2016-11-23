@@ -78,12 +78,7 @@ public final class TwinUtilities {
 		return (haystack.indexOf(needle) >= 0);
 	}
 	
-	
-	/**
-	 * Methode qui teste si un objet est null.
-	 * @param o Object
-	 * @return vrai si o est null
-	 */
+
 	public static boolean isNull(Object o) {
 		if (o == null || (o+"").equalsIgnoreCase("null")) {
 			return true;
@@ -124,5 +119,14 @@ public final class TwinUtilities {
 
 	public static int randomInteger(int min, int max) {
 		return (int)((Math.random()*(max-min+1)+min));
+	}
+
+	public static String chars2String(char[] c) {
+		String str = "";
+		int x = 0;
+		while (x <= c.length-1) {
+			str += ""+c[x++];
+		}
+		return str;
 	}
 }
