@@ -12,7 +12,7 @@ import java.util.List;
  * this is just a test Service for now
  */
 public class BuildingService implements GlobalConstants {
-	private static List<Building> listBuildings = generateBuildings(50);
+	private static List<Building> listBuildings = generateBuildings(5000);
 
 
 

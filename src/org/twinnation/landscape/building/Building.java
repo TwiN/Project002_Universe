@@ -1,6 +1,6 @@
 package org.twinnation.landscape.building;
 
-public abstract class Building {
+public class Building {
 	/* Graphical aspect of the building */
 	private int width;
 	private int height;

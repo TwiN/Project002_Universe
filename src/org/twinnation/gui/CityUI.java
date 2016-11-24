@@ -16,16 +16,17 @@ public class CityUI extends JFrame implements GlobalConstants {
 	public CityUI() {
 		frame.setTitle("City");
 		frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+		frame.getContentPane().setPreferredSize(new Dimension(FRAME_WIDTH+2, FRAME_HEIGHT+2));
 		frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 		panel = new GPanel();
 		frame.add(panel);
+		frame.pack();
 		frame.setVisible(true);
 	}
 
 	class GPanel extends JPanel {
-		public GPanel() {
-			super.setPreferredSize(new Dimension(FRAME_WIDTH, FRAME_HEIGHT));
-		}
+
+		public GPanel() {}
 
 		@Override
 		public void paintComponent(Graphics g) {
