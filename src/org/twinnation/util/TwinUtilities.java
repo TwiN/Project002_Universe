@@ -1,11 +1,6 @@
 package org.twinnation.util;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringReader;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.MessageDigest;
@@ -129,4 +124,37 @@ public final class TwinUtilities {
 		}
 		return str;
 	}
+
+
+	public static String base64encode(byte[] b) {
+		return Base64.getEncoder().encodeToString(b);
+	}
+	
+	
+	public static String base64encode(String s) {
+		return Base64.getEncoder().encodeToString(s.getBytes());
+	}
+	
+
+	public static String base64decode(byte[] b) {
+		String decodedString = "";
+		try {
+			decodedString = new String(Base64.getDecoder().decode(b), "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		return decodedString;
+	}
+	
+	
+	public static String base64decode(String s) {
+		String decodedString = "";
+		try {
+			decodedString = new String(Base64.getDecoder().decode(s.getBytes()), "UTF-8");
+		} catch (UnsupportedEncodingException e) {
+			e.printStackTrace();
+		}
+		return decodedString;
+	}
+
 }
