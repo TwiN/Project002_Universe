@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="TwinUtils">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../!MyLibs/TwinUtils.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../!MyLibs/TwinUtils.jar!/" />
+    </SOURCES>
+  </library>
+</component>

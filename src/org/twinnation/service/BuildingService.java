@@ -1,7 +1,7 @@
 package org.twinnation.service;
 import org.twinnation.landscape.building.Building;
 import org.twinnation.constant.GlobalConstants;
-import org.twinnation.util.TwinUtilities;
+import org.twinnation.twinutilities.RandomUtils;
 
 import java.awt.*;
 import java.util.ArrayList;
@@ -34,18 +34,18 @@ public class BuildingService implements GlobalConstants {
 
 
 	public static Building generateRandom() {
-		int width = TwinUtilities.randomInteger(10, 50),
-				height = TwinUtilities.randomInteger(10, 50),
-				length = TwinUtilities.randomInteger(10, 50),
-				posX = TwinUtilities.randomInteger(0, FRAME_WIDTH),
-				posY = TwinUtilities.randomInteger(0, FRAME_HEIGHT);
+		int width = RandomUtils.randomInteger(10, 50),
+				height = RandomUtils.randomInteger(10, 50),
+				length = RandomUtils.randomInteger(10, 50),
+				posX = RandomUtils.randomInteger(0, FRAME_WIDTH),
+				posY = RandomUtils.randomInteger(0, FRAME_HEIGHT);
 
 		while (height+posY>FRAME_HEIGHT || height+posY<0) {
-			posY = TwinUtilities.randomInteger(0, FRAME_HEIGHT);
+			posY = RandomUtils.randomInteger(0, FRAME_HEIGHT);
 		}
 
 		while (width+posX>FRAME_WIDTH || width+posX<0) {
-			posX = TwinUtilities.randomInteger(0, FRAME_WIDTH);
+			posX = RandomUtils.randomInteger(0, FRAME_WIDTH);
 		}
 
 		// TODO: check if there's already a building in the way
